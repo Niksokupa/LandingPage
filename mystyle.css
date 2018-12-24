@@ -1,0 +1,408 @@
+body {
+    background-image: url(1982.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+.fab {
+    color: white;
+}
+
+.logo {
+    position: absolute;
+    width: 125px;
+    height: 150px;
+    background-color: rgba(30, 91, 129, 0.7);
+    border: 2px solid black;
+    border-top: none;
+    z-index: 4;
+}
+
+.center {
+    width: 700px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -350px;
+    margin-top: -150px;
+    border: 2px solid black;
+    background-color: rgba(30, 91, 129, 0.7);
+    z-index: 3;
+}
+
+.fa-facebook-f:hover {
+    color: rgb(59, 89, 152);
+}
+
+.fa-twitter:hover {
+    color: rgb(0, 172, 237);
+}
+
+.fa-instagram:hover {
+    color: rgb(251, 57, 88);
+}
+
+/* IMAGENES DE LAS PROVINCIAS */
+
+.wrapper {
+    padding: 50px 50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: inherit;
+}
+
+.parent {
+    width: 150px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    display: inline-block;
+    cursor: pointer;
+    z-index: inherit;
+}
+
+.child {
+    height: 200px;
+    width: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    z-index: inherit;
+}
+
+.insideimage {
+    display: none;
+    font-size: 18px;
+    color: #ffffff !important;
+    font-family: sans-serif;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 30px;
+    cursor: pointer;
+    z-index: inherit;
+}
+
+.parent:hover .child,
+.parent:focus .child {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.parent:hover .child:before,
+.parent:focus .child:before {
+    display: block;
+}
+
+.parent:hover a,
+.parent:focus a {
+    display: block;
+}
+
+.child:before {
+    content: "";
+    display: none;
+    height: 200px;
+    width: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(52, 73, 94, 0.75);
+}
+
+.bg-one {
+    background-image: url(alicante.jpg);
+    background-position-x: -50px;
+}
+
+.bg-two {
+    background-image: url(valencia.png);
+    background-position-x: -150px;
+}
+
+.bg-three {
+    background-image: url(Castellon.jpg);
+    background-position-x: -50px;
+}
+
+
+/* ANIMACIONES NUBES Y AVION */
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Arvo', serif;
+}
+
+#sky {
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+    z-index: 2;
+}
+
+.cloud {
+    position: absolute;
+    background-image: url(cloud1.png);
+    background-repeat: no-repeat;
+    width: 176px;
+    height: 114px;
+}
+
+#cloud1 {
+    top: 70px;
+    left: 400px;
+    -webkit-animation: movingclouds 23s linear infinite;
+    -moz-animation: movingclouds 23s linear infinite;
+    -o-animation: movingclouds 23s linear infinite;
+}
+
+#cloud2 {
+    top: 40px;
+    left: 600px;
+    -webkit-animation: movingclouds 26s linear infinite;
+    -moz-animation: movingclouds 26s linear infinite;
+    -o-animation: movingclouds 26s linear infinite;
+}
+
+#cloud3 {
+    top: 100px;
+    left: 100px;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0.9;
+    -webkit-animation: movingclouds 28s linear infinite;
+    -moz-animation: movingclouds 28s linear infinite;
+    -o-animation: movingclouds 28s linear infinite;
+}
+
+#cloud4 {
+    top: 20px;
+    left: 40px;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.8;
+    -webkit-animation: movingclouds 30s linear infinite;
+    -moz-animation: movingclouds 30s linear infinite;
+    -o-animation: movingclouds 30s linear infinite;
+}
+
+#cloud5 {
+    top: 100px;
+    left: 500px;
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+    opacity: 0.7;
+    -webkit-animation: movingclouds 35s linear infinite;
+    -moz-animation: movingclouds 35s linear infinite;
+    -o-animation: movingclouds 35s linear infinite;
+}
+
+#cloud6 {
+    top: 50px;
+    left: 200px;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    opacity: 0.5;
+    -webkit-animation: movingclouds 37s linear infinite;
+    -moz-animation: movingclouds 37s linear infinite;
+    -o-animation: movingclouds 37s linear infinite;
+}
+
+#cloud7 {
+    top: 92px;
+    left: 700px;
+    -webkit-transform: scale(0.4);
+    -moz-transform: scale(0.4);
+    -ms-transform: scale(0.4);
+    transform: scale(0.4);
+    opacity: 0.4;
+    -webkit-animation: movingclouds 39s linear infinite;
+    -moz-animation: movingclouds 39s linear infinite;
+    -o-animation: movingclouds 39s linear infinite;
+}
+
+#aeroplane {
+    position: absolute;
+    z-index: -2;
+    background-image: url(airbus.png);
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 70px;
+    -webkit-animation: movingplane 15s linear infinite;
+    -moz-animation: movingplane 15s linear infinite;
+    -o-animation: movingplane 15s linear infinite;
+}
+
+@keyframes movingclouds {
+    0% {
+        margin-left: 100%;
+    }
+
+    100% {
+        margin-left: -100%;
+    }
+}
+
+@-webkit-keyframes movingclouds {
+    0% {
+        margin-left: 100%;
+    }
+
+    100% {
+        margin-left: -100%;
+    }
+}
+
+@-moz-keyframes movingclouds {
+    0% {
+        margin-left: 100%;
+    }
+
+    100% {
+        margin-left: -100%;
+    }
+}
+
+@keyframes movingplane {
+    0% {
+        margin-left: 100%;
+        top: 300px;
+    }
+
+    29% {
+        margin-left: 50%;
+        top: 150px;
+        -webkit-transform: rotate(12deg);
+        -moz-transform: rotate(12deg);
+        -ms-transform: rotate(12deg);
+        transform: rotate(12deg);
+    }
+
+    65% {
+        margin-left: 0%;
+        top: 30px;
+    }
+
+    100% {
+        -webkit-transform: rotate(17deg);
+        -moz-transform: rotate(17deg);
+        -ms-transform: rotate(17deg);
+        transform: rotate(17deg);
+        margin-left: -50%;
+        top: -125px;
+    }
+}
+
+@-webkit-keyframes movingplane {
+    0% {
+        margin-left: 100%;
+        top: 300px;
+    }
+
+    29% {
+        margin-left: 50%;
+        top: 50px;
+        -webkit-transform: rotate(20deg);
+        -moz-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+        transform: rotate(20deg);
+    }
+
+    31% {
+        -webkit-transform: rotate(-20deg);
+        -moz-transform: rotate(-20deg);
+        -ms-transform: rotate(-20deg);
+        transform: rotate(-20deg);
+    }
+
+    60% {
+        margin-left: 0%;
+        top: 300px;
+    }
+
+    100% {
+        margin-left: -100%;
+        top: 300px;
+    }
+}
+
+@-moz-keyframes movingplane {
+    0% {
+        margin-left: 100%;
+        top: 300px;
+    }
+
+    29% {
+        margin-left: 50%;
+        top: 50px;
+        -webkit-transform: rotate(20deg);
+        -moz-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+        transform: rotate(20deg);
+    }
+
+    31% {
+        -webkit-transform: rotate(-20deg);
+        -moz-transform: rotate(-20deg);
+        -ms-transform: rotate(-20deg);
+        transform: rotate(-20deg);
+    }
+
+    60% {
+        margin-left: 0%;
+        top: 300px;
+    }
+
+    100% {
+        margin-left: -100%;
+        top: 300px;
+    }
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 600px) {
+    body {
+        background-image: url(1982.jpg);
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        height: 100vh;
+        background-position-x: -600px;
+    }
+
+
+    .cloud {
+        display: none;
+    }
+
+    #aeroplane {
+        display: none;
+    }
+}
