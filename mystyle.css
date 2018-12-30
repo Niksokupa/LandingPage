@@ -7,12 +7,17 @@ body {
     z-index: 1;
 }
 
-.fab, .far{
+.fab,
+.far {
     color: white;
 }
 
 #loginform {
     display: none;
+}
+
+#registro {
+    color: rgb(251, 148, 75);
 }
 
 #registroform {
@@ -38,6 +43,7 @@ body {
     margin-left: -350px;
     margin-top: -150px;
     border: 2px solid black;
+    color: rgb(251, 148, 75);
     background-color: rgba(30, 91, 129, 0.7);
     z-index: 3;
 }
@@ -52,6 +58,10 @@ body {
 
 .fa-instagram:hover {
     color: rgb(251, 57, 88);
+}
+
+.far:hover {
+    color: black;
 }
 
 /* IMAGENES DE LAS PROVINCIAS */
@@ -180,6 +190,7 @@ body {
     -webkit-animation: movingclouds 23s linear infinite;
     -moz-animation: movingclouds 23s linear infinite;
     -o-animation: movingclouds 23s linear infinite;
+    animation: movingclouds 23s linear infinite;
 }
 
 #cloud2 {
@@ -188,6 +199,7 @@ body {
     -webkit-animation: movingclouds 26s linear infinite;
     -moz-animation: movingclouds 26s linear infinite;
     -o-animation: movingclouds 26s linear infinite;
+    animation: movingclouds 26s linear infinite;
 }
 
 #cloud3 {
@@ -201,6 +213,7 @@ body {
     -webkit-animation: movingclouds 28s linear infinite;
     -moz-animation: movingclouds 28s linear infinite;
     -o-animation: movingclouds 28s linear infinite;
+    animation: movingclouds 28s linear infinite;
 }
 
 #cloud4 {
@@ -214,6 +227,7 @@ body {
     -webkit-animation: movingclouds 30s linear infinite;
     -moz-animation: movingclouds 30s linear infinite;
     -o-animation: movingclouds 30s linear infinite;
+    animation: movingclouds 30s linear infinite;
 }
 
 #cloud5 {
@@ -227,6 +241,7 @@ body {
     -webkit-animation: movingclouds 35s linear infinite;
     -moz-animation: movingclouds 35s linear infinite;
     -o-animation: movingclouds 35s linear infinite;
+    animation: movingclouds 35s linear infinite;
 }
 
 #cloud6 {
@@ -240,6 +255,7 @@ body {
     -webkit-animation: movingclouds 37s linear infinite;
     -moz-animation: movingclouds 37s linear infinite;
     -o-animation: movingclouds 37s linear infinite;
+    animation: movingclouds 37s linear infinite;
 }
 
 #cloud7 {
@@ -253,6 +269,7 @@ body {
     -webkit-animation: movingclouds 39s linear infinite;
     -moz-animation: movingclouds 39s linear infinite;
     -o-animation: movingclouds 39s linear infinite;
+    animation: movingclouds 39s linear infinite;
 }
 
 #aeroplane {
@@ -265,6 +282,7 @@ body {
     -webkit-animation: movingplane 15s linear infinite;
     -moz-animation: movingplane 15s linear infinite;
     -o-animation: movingplane 15s linear infinite;
+    animation: movingplane 15s linear infinite;
 }
 
 @keyframes movingclouds {
@@ -335,28 +353,25 @@ body {
 
     29% {
         margin-left: 50%;
-        top: 50px;
-        -webkit-transform: rotate(20deg);
-        -moz-transform: rotate(20deg);
-        -ms-transform: rotate(20deg);
-        transform: rotate(20deg);
+        top: 150px;
+        -webkit-transform: rotate(12deg);
+        -moz-transform: rotate(12deg);
+        -ms-transform: rotate(12deg);
+        transform: rotate(12deg);
     }
 
-    31% {
-        -webkit-transform: rotate(-20deg);
-        -moz-transform: rotate(-20deg);
-        -ms-transform: rotate(-20deg);
-        transform: rotate(-20deg);
-    }
-
-    60% {
+    65% {
         margin-left: 0%;
-        top: 300px;
+        top: 30px;
     }
 
     100% {
-        margin-left: -100%;
-        top: 300px;
+        -webkit-transform: rotate(17deg);
+        -moz-transform: rotate(17deg);
+        -ms-transform: rotate(17deg);
+        transform: rotate(17deg);
+        margin-left: -50%;
+        top: -125px;
     }
 }
 
@@ -368,28 +383,25 @@ body {
 
     29% {
         margin-left: 50%;
-        top: 50px;
-        -webkit-transform: rotate(20deg);
-        -moz-transform: rotate(20deg);
-        -ms-transform: rotate(20deg);
-        transform: rotate(20deg);
+        top: 150px;
+        -webkit-transform: rotate(12deg);
+        -moz-transform: rotate(12deg);
+        -ms-transform: rotate(12deg);
+        transform: rotate(12deg);
     }
 
-    31% {
-        -webkit-transform: rotate(-20deg);
-        -moz-transform: rotate(-20deg);
-        -ms-transform: rotate(-20deg);
-        transform: rotate(-20deg);
-    }
-
-    60% {
+    65% {
         margin-left: 0%;
-        top: 300px;
+        top: 30px;
     }
 
     100% {
-        margin-left: -100%;
-        top: 300px;
+        -webkit-transform: rotate(17deg);
+        -moz-transform: rotate(17deg);
+        -ms-transform: rotate(17deg);
+        transform: rotate(17deg);
+        margin-left: -50%;
+        top: -125px;
     }
 }
 
@@ -405,12 +417,27 @@ body {
         background-position-x: -600px;
     }
 
-
     .cloud {
         display: none;
     }
 
     #aeroplane {
         display: none;
+    }
+
+    .center {
+        width: 400px;
+        margin-left: -200px;
+    }
+
+    .parent {
+        width: 85px;
+        height: 200px;
+    }
+
+    .insideimage {
+        font-size: 12px;
+        text-align: left;
+        left: 14%;
     }
 }
