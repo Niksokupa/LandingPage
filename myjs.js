@@ -5,6 +5,7 @@ $(document).ready(function () {
         $(".center").hide().delay(800).fadeIn(3000);
     });
 
+    $("#ciudades").sortable();
 
 
     $("#login").click(function () {
