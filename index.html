@@ -27,7 +27,23 @@
         <img class="align-self-end" src="prueba2_animated.svg" style="width: 125px; height: 125px;">
     </div>
     <div class="center">
-        <div class="wrapper d-flex justify-content-between">
+        <form id="loginform" class="mx-3 my-3">
+            <div class="form-group">
+                <label for="exampleInputEmail1"><b>Usuario</b></label>
+                <input type="email" class="form-control border border-dark" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Introduce tu nombre de usuario">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1"><b>Contraseña</b></label>
+                <input type="password" class="form-control border border-dark" id="exampleInputPassword1" placeholder="Introduce tu contraseña">
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1"><b>Recordarme</b></label>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+        <div class="wrapper d-flex justify-content-between" id="ciudades">
             <div class="parent align-self-end">
                 <div class="child bg-one">
                     <a class="insideimage" href="#">Alicante</a>
@@ -51,6 +67,7 @@
         <a class="pr-3" target="_blank" href="https://facebook.com/casafacil"><i class="fab fa-2x fa-facebook-f"></i></a>
         <a class="pr-3" target="_blank" href="https://www.twitter.com/casafacil"><i class="fab fa-2x fa-twitter"></i></a>
         <a class="pr-3" target="_blank" href="https://www.instagram.com/casafacil"><i class="fab fa-2x fa-instagram"></i></a>
+        <a class="pr-3" target="_blank" id="login"> <i class="far fa-2x fa-user"></i></a>
     </div>
     <div id="sky">
         <div id="cloud1" class="cloud"></div>

@@ -7,8 +7,12 @@ body {
     z-index: 1;
 }
 
-.fab {
+.fab, .far{
     color: white;
+}
+
+#loginform {
+    display: none;
 }
 
 .logo {
